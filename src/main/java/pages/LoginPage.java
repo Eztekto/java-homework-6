@@ -6,16 +6,25 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPage {
 
-    // Обычный поиск элемента
-    private WebElement user = driver.findElement(By.id(""));
-
-    // Поиск элемента через аннотацию
-    @FindBy(id = "")
+    @FindBy(id = "password")
     private WebElement password;
 
-    // todo: остальные элементы страницы
+    @FindBy(id = "username")
+    private WebElement username;
+
+    public WebElement getPassword() {
+        return password;
+    }
+
+    public WebElement getUsername() {
+        return username;
+    }
+
 
     public void login(String user, String password) {
-        // todo
+        getUsername().sendKeys(user);
+        getPassword().sendKeys(password);
+
+
     }
 }
