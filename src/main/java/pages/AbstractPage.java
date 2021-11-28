@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
@@ -13,4 +14,6 @@ public abstract class AbstractPage {
     public static void setDriver(WebDriver webDriver) {
         driver = webDriver;
     }
+
+
 }
