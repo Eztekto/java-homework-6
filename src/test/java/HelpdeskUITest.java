@@ -1,4 +1,3 @@
-import com.sun.tools.javac.Main;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -9,6 +8,7 @@ import pages.AbstractPage;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.TicketsPage;
+
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
