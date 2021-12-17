@@ -1,17 +1,20 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
 public class LoginPage extends AbstractPage {
-    private WebElement user = driver.findElement(By.id("username"));
-    private WebElement password = driver.findElement(By.id("password"));
+    /*private WebElement user = driver.findElement(By.id("username"));*/
+    /*private WebElement password = driver.findElement(By.id("password"));*/
 
+    @FindBy(id = "username")
+    private WebElement user;
 
-
-
+    @FindBy(id = "password")
+    private WebElement password;
 
 
 
